@@ -1,3 +1,4 @@
+# Approach 1
 from node import Node
 
 class Stack:
@@ -27,3 +28,16 @@ class Stack:
             return self.top.data
         else:
             return None
+
+# Approach 2
+import queue
+
+stack = queue.LifoQueue(maxsize=0) #infinite stack
+
+stack.put('apple')
+stack.put('pen')
+print(stack.qsize())
+
+print(stack.get())
+print(stack.get())
+print(stack.empty())
