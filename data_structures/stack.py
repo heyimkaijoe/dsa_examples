@@ -36,8 +36,8 @@ stack = queue.LifoQueue(maxsize=0) #infinite stack
 
 stack.put('apple')
 stack.put('pen')
-print(stack.qsize())
+print(stack.qsize()) # 2
 
-print(stack.get())
-print(stack.get())
-print(stack.empty())
+print(stack.get())   # pen
+print(stack.get())   # apple
+print(stack.empty()) # True
