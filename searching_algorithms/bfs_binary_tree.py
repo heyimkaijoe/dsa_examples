@@ -1,4 +1,4 @@
-from binary_search_tree import BinarySearchTree
+from binary_search_tree import BinarySearchTree, numbered_bst
 from queue import SimpleQueue
 
 def bfs(self):
@@ -22,11 +22,8 @@ def bfs(self):
 
 BinarySearchTree.bfs = bfs
 
-bst = BinarySearchTree()
+bst = numbered_bst()
 
-bst.insert(47)
-bst.insert(48)
-bst.insert(49)
 bst.insert(42)
 bst.insert(45)
 bst.insert(46)

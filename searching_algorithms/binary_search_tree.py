@@ -55,11 +55,16 @@ class BinarySearchTree:
                 current_node = current_node.left_child
             return current_node.data
 
-bst = BinarySearchTree()
+def numbered_bst():
+    bst = BinarySearchTree()
 
-bst.insert(47)
-bst.insert(48)
-bst.insert(49)
+    bst.insert(47)
+    bst.insert(48)
+    bst.insert(49)
+
+    return bst
+
+bst = numbered_bst()
 
 print(bst.root.data)                         # 47
 print(bst.root.left_child)                   # None
