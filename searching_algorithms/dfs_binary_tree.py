@@ -12,14 +12,14 @@ def in_order(self, current_node):
 def pre_order(self, current_node):
     if current_node:
         print(current_node.data)
-        self.in_order(current_node.left_child)
-        self.in_order(current_node.right_child)
+        self.pre_order(current_node.left_child)
+        self.pre_order(current_node.right_child)
 
 # post-order
 def post_order(self, current_node):
     if current_node:
-        self.in_order(current_node.left_child)
-        self.in_order(current_node.right_child)
+        self.post_order(current_node.left_child)
+        self.post_order(current_node.right_child)
         print(current_node.data)
 
 BinarySearchTree.in_order = in_order
@@ -37,5 +37,5 @@ bst.insert(29)
 bst.insert(12)
 
 bst.in_order(bst.root)   # print order: 12->13->15->20->22->28->29
-bst.pre_order(bst.root)  # print order: 20->12->13->15->22->28->29
-bst.post_order(bst.root) # print order: 12->13->15->22->28->29->20
+bst.pre_order(bst.root)  # print order: 20->13->12->15->28->22->29
+bst.post_order(bst.root) # print order: 12->15->13->22->29->28->20
