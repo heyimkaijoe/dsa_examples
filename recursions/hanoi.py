@@ -4,4 +4,4 @@ def hanoi(nums_disk, from_rod, to_rod, aux_rod):
         print('Moving disk', nums_disk, 'from rod', from_rod, 'to rod', to_rod)
         hanoi(nums_disk - 1, aux_rod, to_rod, from_rod)
 
-hanoi(3, 'A', 'C', 'B') # moves == 2 ** nums_disk - 1 == 7
+hanoi(3, 'A', 'C', 'B') # moves == 2 ** (nums_disk - 1) == 7
