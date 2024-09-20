@@ -6,6 +6,8 @@ def insertion_sort(list):
             Average: Θ(n^2)
         Space complexity:
             O(1) -> in-place algorithm
+        Stability:
+            stable algorithm
     '''
     
     res = [list[:]]
