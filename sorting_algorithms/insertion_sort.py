@@ -1,4 +1,13 @@
 def insertion_sort(list):
+    '''
+        Time complexity:
+               Best: Ω(n) -> already sorted
+              Worst: O(n^2) -> in reverse order
+            Average: Θ(n^2)
+        Space complexity:
+            O(1) -> in-place algorithm
+    '''
+    
     res = [list[:]]
 
     for i in range(len(list)):
