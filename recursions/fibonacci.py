@@ -1,5 +1,6 @@
 cache = [None]*100
 
+# Two-branch recursion
 def fibonacci(n):
     if n < 0:
         return 'Argument should not be negative, please try again.'
